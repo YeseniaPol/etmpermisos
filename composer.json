@@ -1,0 +1,30 @@
+{
+    "name": "etm/etm_permisos",
+    "description": "Sistema de permisos y roles en etm",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yesenia Polvo",
+            "email": "yesenia.polvo@eagletlax.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "etm\\etm_permisos\\":"src/"
+        }
+    },
+
+    "extra":{
+        "laravel":{
+            "providers":[
+                "etm\\etm_permisos\\etmPermisosServiceProvider",
+                "etm\\etm_permisos\\AuthServiceProvider",
+                "etm\\etm_permisos\\EventServiceProvider"
+
+            ]
+        }
+    }
+
+}
